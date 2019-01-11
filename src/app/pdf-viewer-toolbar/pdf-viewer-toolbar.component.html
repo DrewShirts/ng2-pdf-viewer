@@ -1,0 +1,11 @@
+<p>
+  pdf-viewer-toolbar works!
+</p>
+
+<div class="pdf-viewer-toolbar">
+  <a (click)="zoomIn()"><div *ngIf="zoomInClass === null">&#8593;</div><i class="{{zoomInClass}}" *ngIf="zoomInClass != null"></i></a>
+  <a (click)="zoomOut()"><div *ngIf="zoomOutClass == null">&#8595;</div><i class="{{zoomOutClass}}" *ngIf="zoomOutClass != null"></i></a>
+  <a (click)="zoomToHeight()"><div *ngIf="zoomToHeightClass == null">&#8597;</div><i class="{{zoomToHeightClass}}" *ngIf="zoomToHeightClass != null"></i></a>
+  <a (click)="zoomToWidth()"><div *ngIf="zoomToWidthClass == null">&#8596;</div><i class="{{zoomToWidthClass}}" *ngIf="zoomToWidthClass != null"></i></a>
+  <a (click)="print()"><div *ngIf="printerClass == null">&#9113;</div><i class="{{printerClass}}" *ngIf="printerClass != null"></i></a>
+</div>

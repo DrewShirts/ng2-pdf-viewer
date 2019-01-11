@@ -45,6 +45,12 @@ export class AppComponent {
   isOutlineShown = false;
   pdfQuery = '';
 
+  iconPrinter = 'pdf-icon icon-printer';
+  iconZoomIn = 'pdf-icon icon-zoom-in';
+  iconZoomOut = 'pdf-icon icon-zoom-out';
+  iconZoomToHeight = 'pdf-icon icon-zoom-to-height';
+  iconZoomToWidth = 'pdf-icon icon-zoom-to-width';
+
   @ViewChild(PdfViewerComponent) private pdfComponent: PdfViewerComponent;
 
   // Load pdf

@@ -1,9 +1,9 @@
 <mat-toolbar color="primary">
     <mat-toolbar-row>
         <span>ng2-pdf-viewer</span>
-        
+
         <span class="spacer"></span>
-        
+
         <iframe src="https://ghbtns.com/github-btn.html?user=vadimdez&repo=ng2-pdf-viewer&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
     </mat-toolbar-row>
 </mat-toolbar>
@@ -195,7 +195,12 @@
                   (on-progress)="onProgress($event)"
                   (page-rendered)="pageRendered($event)"
       ></pdf-viewer>
-
+      <pdf-viewer-toolbar [src]="pdfSrc"
+                          [icon-printer]="iconPrinter"
+                          [icon-zoom-in]="iconZoomIn"
+                          [icon-zoom-out]="iconZoomOut"
+                          [icon-zoom-to-height]="iconZoomToHeight"
+                          [icon-zoom-to-width]="iconZoomToWidth"></pdf-viewer-toolbar>
   </div>
 </main>
 <footer>
