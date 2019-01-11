@@ -12,12 +12,14 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "packagr": "ng-packagr -p ng-package.json",
-    "docs": "ng build --prod --output-path docs --base-href ng2-pdf-viewer && cp ./docs/index.html ./docs/404.html"
+    "docs": "ng build --prod --output-path docs --base-href ng2-pdf-viewer && cp ./docs/index.html ./docs/404.html",
+    "webdriver-update": "webdriver-manager update",
+    "webdriver-update2": "./node_modules/protractor/bin/webdriver-manager update"
   },
   "private": false,
   "repository": {
     "type": "git",
-    "url": "git+https://vadimdez@github.com/VadimDez/ng2-pdf-viewer.git"
+    "url": "git+https://drewshirts@github.com/DrewShirts/ng2-pdf-viewer.git"
   },
   "keywords": [
     "angular",
@@ -46,7 +48,7 @@
   "devDependencies": {
     "@angular/animations": "^5.2.0",
     "@angular/cdk": "^5.1.1",
-    "@angular/cli": "1.6.6",
+    "@angular/cli": "^6.0.8",
     "@angular/common": "^5.2.0",
     "@angular/compiler": "^5.2.0",
     "@angular/compiler-cli": "^5.2.0",
@@ -76,6 +78,7 @@
     "ts-node": "~4.1.0",
     "tslint": "~5.9.1",
     "typescript": "~2.6.2",
-    "zone.js": "^0.8.19"
+    "zone.js": "^0.8.19",
+    "@angular-devkit/build-angular": "~0.6.8"
   }
 }
