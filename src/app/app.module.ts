@@ -11,6 +11,7 @@ import { PdfViewerModule } from './pdf-viewer/pdf-viewer.module';
 import { AppComponent } from './app.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent
@@ -24,10 +25,8 @@ import { AppComponent } from './app.component';
     MatFormFieldModule,
     MatSlideToggleModule,
     MatToolbarModule,
-
     PdfViewerModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

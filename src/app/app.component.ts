@@ -9,6 +9,7 @@ import {
 } from './pdf-viewer/pdf-viewer.module';
 
 import { PdfViewerComponent } from './pdf-viewer/pdf-viewer.component';
+// import { PdfViewerToolbarComponent } from './pdf-viewer-toolbar/pdf-viewer-toolbar.component';
 
 @Component({
   moduleId: module.id,
@@ -17,6 +18,7 @@ import { PdfViewerComponent } from './pdf-viewer/pdf-viewer.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
   pdfSrc: string | PDFSource | ArrayBuffer = './assets/pdf-test.pdf';
 
   // or pass options as object
@@ -46,6 +48,7 @@ export class AppComponent {
   pdfQuery = '';
 
   @ViewChild(PdfViewerComponent) private pdfComponent: PdfViewerComponent;
+  // @ViewChild(PdfViewerToolbarComponent) private pdfToolbarComponent: PdfViewerToolbarComponent;
 
   // Load pdf
   loadPdf() {
